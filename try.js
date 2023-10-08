@@ -24,8 +24,13 @@ function erase() {
 }
 
 function calculate() {
+    var inputElement = document.getElementById("display");
+    var inputValue = inputElement.value;
+    
+    if (inputValue.length > 0) {
     var x = document.getElementById("display").value;
     var result = eval(x);
     document.getElementById("input").value = ('= ')+result ;
+    }
 }
 

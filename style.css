@@ -32,7 +32,7 @@ body{
     margin: 0 5 0 5;
     border-radius: 4px;
     border: 2px none;
-    /* background-color: #ffffffc2; */
+    background-color: #ffffffc2;
     cursor: pointer;
     font-size: medium;
 }
@@ -48,10 +48,17 @@ body{
     /* border-radius: 4px; */
 }
 .eqninput{
-    padding-top: 10px 44px ;
-
+    padding: 10px 44px ;
 }
 
 #btn_equal{
     background-color: #F6E35D;
+}
+
+.row button:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.row button:active{
+    transform: translateY(4px);
 }
