@@ -4,55 +4,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    
+    <script type="text/javascript" src="try.js"></script>
+
 </head>
 <body>
     <div class="container">
     <div class="Calculator flex flex-col item-center mx-auto items-center ">
         <div class="row" id="resBx">
-            <input class="eqninput" type="text" >
+            <input class="eqninput" id="display" type="text" >
             <br>
-            <input class="input" type="text" >
+            <input class="input" id="input" type="text" readonly>
             <br><br>
        
         </div>
         <div class="row">
-            <button class="item1 button" id="btn_perc" >%</button>
-            <button class="item2 button" id="btn_clreqn" >CE</button>
-            <button class="item3 button" id="btn_clr">C</button>
-            <button class="item4 button" id="btn_bckspc" ><-</button>
+            <button class="item1 button" value="%" id="btn_perc" >%</button>
+            <button class="item2 button" value="CE" id="btn_clreqn" >CE</button>
+            <button class="item3 button" value="C" id="btn_clr" onclick="clearDis()">C</button>
+            <button class="item4 button" value="<-" id="btn_bckspc" ><-</button>
         </div>
         <div class="row">
-            <button class="item5 button" id="btn_inv">1/x</button>
+            <button class="item5 button" id="btn_inv" >1/x</button>
             <button class="item6 button" id="btn_sqr">x2</button>
             <button class="item7 button" id="btn_sqrt">2√x</button>
             <button class="item8 button" id="btn_div">/</button>
         </div>
         <div class="row">
-            <button class="item9 button" id="btn_seven" >7</button>
-            <button class="item10 button" id="btn_eight">8</button>
-            <button class="item11 button" id="btn_nine">9</button>
-            <button class="item12 button" id="btn_mul" >X</button>
+            <button class="item9 button" value="7" id="btn_seven" onclick="display('7')" >7</button>
+            <button class="item10 button" value="8" id="btn_eight" onclick="display('8')" >8</button>
+            <button class="item11 button" value="9" id="btn_nine" onclick="display('9')" >9</button>
+            <button class="item12 button"  id="btn_mul" >X</button>
         </div>
         <div class="row">
-            <button class="item13 button" id="btn_four" >4</button>
-            <button class="item14 button" id="btn_five">5</button>
-            <button class="item15 button" id="btn_six">6</button>
-            <button class="item16 button" id="btn_sub">-</button>
+            <button class="item13 button" value="4" id="btn_four" onclick="display('4')" >4</button>
+            <button class="item14 button" value="5" id="btn_five" onclick="display('5')">5</button>
+            <button class="item15 button" value="6" id="btn_six" onclick="display('6')">6</button>
+            <button class="item16 button"  id="btn_sub">-</button>
         </div>
         <div class="row">
-            <button class="item17 button" id="btn_one" >1</button>
-            <button class="item18 button" id="btn_two">2</button>
-            <button class="item19 button" id="btn_three">3</button>
-            <button class="item20 button" id="btn_add">+</button>
+            <button class="item17 button" value="1" id="btn_one"  onclick="display('1')">1</button>
+            <button class="item18 button" value="2" id="btn_two" onclick="display('2')">2</button>
+            <button class="item19 button" value="3" id="btn_three" onclick="display('3')">3</button>
+            <button class="item20 button"  id="btn_add">+</button>
         </div>
         <div class="row">
             <button class="item21 button" id="plusminus" >+/-</button>
-            <button class="item22 button" id="btn_zero">0</button>
+            <button class="item22 button" value="0" id="btn_zero">0</button>
             <button class="item23 button" id="btn_dot">.</button>
             <button class="item24 button" id="btn_equal">=</button>
         </div>  
